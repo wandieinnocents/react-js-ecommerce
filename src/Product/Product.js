@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import { render } from "react-dom";
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import Rating from '@mui/material/Rating';
+
 
 
 import { ImportantDevices } from '@mui/icons-material';
@@ -59,6 +61,8 @@ const ExpandMore = styled((props) => {
   }));
   
 function Product() {
+    const [value, setValue] = React.useState(2);
+
 
 
     return(
@@ -87,7 +91,21 @@ function Product() {
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk1SGyLpxwAfc4cBCNhB4adl_Qk3VaolaAQ&usqp=CAU"
             alt="Paella dish"
           />
+           {/* rating */}
+         
           <CardContent>
+
+         
+          <h2 style={{ textAlign:'center',alignItems:'center' }}>
+            <Rating
+                    name="simple-controlled"
+                    value={value}
+                    onChange={(event, newValue) => {
+                    setValue(newValue);
+                    
+                    }}
+                />
+          </h2>
           <h2 style={{ textAlign:'center',alignItems:'center' }}>UGX : 250,000</h2>
           <h2 style={{ textAlign:'center',alignItems:'center',marginTop:-15,color:'red' }}> <s> UGX 5000,000 </s></h2>
             <Typography variant="body2" color="text.secondary" >

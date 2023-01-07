@@ -36,6 +36,7 @@ function Home() {
               <Product />
               <Product />
               <Product />
+              <Product />
             
             </div>
 
