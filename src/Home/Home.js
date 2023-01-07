@@ -43,6 +43,9 @@ function Home() {
               {/* home row 3 */}
               <div className="home__row">
               <Product />
+              <Product />
+              <Product />
+         
               
             </div>
             
