@@ -14,7 +14,7 @@ function Header() {
      {/* header logo */}
      <div className="header_logo">
      <StorefrontIcon  fontSize="large" className="logo_header_image" />
-     <h2 className="header_logo_title"></h2>
+     <h2 className="header_logo_title">eShop</h2>
      </div>
 
      {/* search bar */}
