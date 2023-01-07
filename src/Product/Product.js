@@ -16,7 +16,15 @@ function Product() {
         
 
         {/* product info */}
-        <div className="product_info"></div>
+        <div className="product__info">
+        <p>Product title</p>
+        <p className="product__price">UGX 3000</p>
+        <div className="product__rating">UGX 3000</div>
+
+
+        </div>
+
+        {/* product */}
 
         
         </div>
