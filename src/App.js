@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+
+// icons
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
 
 
       <div className="nav_item">
-      <span className="nav_item_one">Basket</span>
+      <span className="nav_item_one"><ShoppingCartIcon /></span>
       <span className="nav_item_two">0</span>
         
       </div>
