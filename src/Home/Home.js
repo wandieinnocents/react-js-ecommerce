@@ -25,14 +25,14 @@ function Home() {
             className="home__image" />
 
             {/* home row 1 */}
-            <div className="home_row">
+            <div className="home__row">
             <Product />
             <Product />
             
             </div>
 
               {/* home row 2 */}
-              <div className="home_row">
+              <div className="home__row">
               <Product />
               <Product />
               <Product />
@@ -40,7 +40,7 @@ function Home() {
             </div>
 
               {/* home row 3 */}
-              <div className="home_row">
+              <div className="home__row">
               <Product />
               
             </div>
