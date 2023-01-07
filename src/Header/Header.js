@@ -1,11 +1,10 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 
 // icons
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
-
 
 function Header() {
 
