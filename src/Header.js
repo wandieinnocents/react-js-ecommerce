@@ -40,15 +40,13 @@ function Header() {
         
       </div>
 
-      <div className="nav_item">
-        <span className="nav_item_one"><ShoppingCartIcon   /></span>
-        {/* <span className="nav_item_two">0</span> */}
+      <div className="nav__itemBasket">
+        <ShoppingCartIcon   />
+        
+        <span className="nav_basketCount">0</span>
         
       </div>
-      <div className="nav_item">
-        <span className="nav_item_two" style={{ fontSize: "20px" }} >0</span>
-        
-      </div>
+    
 
 
       
