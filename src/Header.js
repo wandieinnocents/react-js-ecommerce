@@ -15,7 +15,7 @@ function Header() {
      {/* header logo */}
      <div className="header_logo">
      <StorefrontIcon  fontSize="large" className="logo_header_image" />
-     <h2 className="headerLogoTitle"></h2>
+     <h2 className="header_logo_title"></h2>
      </div>
 
      {/* search bar */}
@@ -40,12 +40,18 @@ function Header() {
         
       </div>
 
-
       <div className="nav_item">
-     <ShoppingCartIcon  fontSize="large"  />
-      <span className="nav_item_two">0</span>
+        <span className="nav_item_one"><ShoppingCartIcon   /></span>
+        {/* <span className="nav_item_two">0</span> */}
         
       </div>
+      <div className="nav_item">
+        <span className="nav_item_two" style={{ fontSize: "20px" }} >0</span>
+        
+      </div>
+
+
+      
      </div>
      
 
