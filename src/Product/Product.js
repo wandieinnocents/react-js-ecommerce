@@ -95,19 +95,26 @@ function Product({id,title,image,price,rating}) {
          
           <CardContent>
 
-         
-          <h2 style={{ textAlign:'center',alignItems:'center' }}>
-            <Rating
+          <div className="product">
+          
+          <h2 className="product__rating">
+            {/* <Rating
                     name="simple-controlled"
                     value={value}
                     onChange={(event, newValue) => {
                     setValue(newValue);
                     
                     }}
-                />
+                /> */}
+                {Array(rating)
+                    .fill()
+                    .map((_, i) => (
+                        <p>⭐</p>
+                    ))}
           </h2>
-          <h2 style={{ textAlign:'center',alignItems:'center' }}>{price}</h2>
-          <h2 style={{ textAlign:'center',alignItems:'center',marginTop:-15,color:'red' }}> <s> UGX 5000,000 </s></h2>
+          </div>
+          <h2 style={{ textAlign:'center', alignItems:'center',marginTop:"-40px", }}>UGX : {price}</h2>
+          {/* <h2 style={{ textAlign:'center',alignItems:'center',marginTop:-15,color:'red' }}> <s> UGX 5000,000 </s></h2> */}
             <Typography variant="body2" color="text.secondary" >
              {title}
             </Typography>
