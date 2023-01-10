@@ -14,10 +14,11 @@ function App() {
     <div className="App">
     <Router>
       <Routes>
-
-      {/* <Route path="/" element={ <Header />}  /> */}
-      <Route path="/" element={ <Home />}  />
-      <Route path="/checkout" element={ <Checkout />}  />
+      {/* Home route */}
+      <Route path="/" element={ [<Header/>,<Home/>] }  />
+      
+      {/* Checkout route */}
+      <Route path="/checkout" element={ [<Header/>,<Checkout/>]}  />
 
 
       </Routes>
