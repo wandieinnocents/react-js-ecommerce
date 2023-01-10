@@ -7,6 +7,8 @@ function Checkout() {
     return(
         <div className="checkout">
 
+        <p>hello world</p>
+
 
         </div>
     )
