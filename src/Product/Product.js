@@ -60,7 +60,7 @@ const ExpandMore = styled((props) => {
     }),
   }));
   
-function Product() {
+function Product({id,title,image,price,rating}) {
     const [value, setValue] = React.useState(2);
 
 
@@ -82,13 +82,13 @@ function Product() {
                 <MoreVertIcon />
               </IconButton>
             }
-            title="HP Laptop Ryzen"
+            title="Product Item"
             subheader="September 14, 2023"
           />
           <CardMedia
             component="img"
             height="194"
-            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk1SGyLpxwAfc4cBCNhB4adl_Qk3VaolaAQ&usqp=CAU"
+            image={image}
             alt="Paella dish"
           />
            {/* rating */}
@@ -106,12 +106,10 @@ function Product() {
                     }}
                 />
           </h2>
-          <h2 style={{ textAlign:'center',alignItems:'center' }}>UGX : 250,000</h2>
+          <h2 style={{ textAlign:'center',alignItems:'center' }}>{price}</h2>
           <h2 style={{ textAlign:'center',alignItems:'center',marginTop:-15,color:'red' }}> <s> UGX 5000,000 </s></h2>
             <Typography variant="body2" color="text.secondary" >
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
+             {title}
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
