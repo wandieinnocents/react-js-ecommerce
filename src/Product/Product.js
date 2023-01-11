@@ -106,7 +106,7 @@ function Product({id,title,image,price,rating}) {
                     
                     }}
                 /> */}
-                {Array(rating)
+                {Array(4)
                     .fill()
                     .map((_, i) => (
                         <p>⭐</p>

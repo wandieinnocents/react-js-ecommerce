@@ -42,35 +42,15 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// parallax image
-const image1 =
-  "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
-const image2 =
-  "https://img00.deviantart.net/2bd0/i/2009/276/c/9/magic_forrest_wallpaper_by_goergen.jpg";
-const image3 =
-  "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
-const image4 =
-  "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
-const parallaxText = {
-  // background: "white",
-  padding: 10,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  textAlign: "center",
-  width: "100%",
-  transform: "translate(-50%,-50%)"
-};
-// end of parallax
+
 export default function Checkout() {
   return (
 
     // General Box Layout
     <Box sx={{ flexGrow: 1 }}>
-      {/* Grid */}
      
-     
-
+    <img src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+    alt="banner" />
 
       {/* GENERAL LAYOUT GRID ROW */}
       <Grid
@@ -79,7 +59,7 @@ export default function Checkout() {
         spacing={2}
       >
       
-
+          {/* COL 1 */}
         {/* PRODUCT BASKET SECTION */}
         <Grid item xs={12} sm={8} md={8} >
 
@@ -88,23 +68,11 @@ export default function Checkout() {
 
         {/* end checkout product component */}
 
-
-
-            
-           
-      
-
         </Grid>
 
         {/* END OF PRODUCT BASKET SECTION */}
 
-
-
-
-
-
-
-      
+        {/* COL 2 */}
         {/* PROCEED TO CHECKOUT */}
         <Grid item xs={12} sm={4} md={4}>
             <h3 style={{ color:'black' }}>PROCEED TO CHECKOUT  </h3>

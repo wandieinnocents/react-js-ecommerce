@@ -105,14 +105,19 @@ export default function CheckoutProduct() {
                                 <Grid item xs={12} sm={12} md={12} >
                                 <Item style={{ backgroundColor: '', padding: 6 }}>
                                 
-                                    <h2 style={{ color:'black' }}>SHOPPING BASKET </h2>
+                                    <Typography style={{ color:'black' }}>
+                                    This is a product that is 100 pure and is
+                                    important in our lives This is a product that is 100 pure and is
+                                    important in our livein our lives
+                                     </Typography>
+
+                                     <h2>UGX 30000 </h2>
+                                     
                                     
                                     
 
                                     {/* button readmore */}
                                     <hr></hr>
-
-                                
 
                                     <Stack 
                                     direction="row"
@@ -123,12 +128,10 @@ export default function CheckoutProduct() {
                                     >
                                     
                                     <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
-                                    Read more
+                                    REMOVE FROM BASKET
                                     </Button>
                                     </Stack>
                                 
-                                    
-
                                 </Item>
                                 
 
