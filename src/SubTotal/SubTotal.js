@@ -73,13 +73,9 @@ export default function SubTotal() {
                                 <Grid item xs={12} sm={12} md={12} >
                                 <Item style={{ backgroundColor: '', padding: 6 }}>
                                 
-                                    <Typography style={{ color:'black' }}>
-                                    This is a product that is 100 pure and is
-                                    important in our lives This is a product that is 100 pure and is
-                                    important in our livein our lives
-                                     </Typography>
+                                   
 
-                                     <h2>UGX 30000 </h2>
+                                   
                                      <CurrencyFormat 
                                        renderText={(value) => (
                                         <>
@@ -111,8 +107,8 @@ export default function SubTotal() {
                                     spacing={2}  
                                     >
                                     
-                                    <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<DeleteIcon />}>
-                                    REMOVE FROM BASKET
+                                    <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
+                                    PROCEED TO CHECKOUT 
                                     </Button>
                                     </Stack>
                                 

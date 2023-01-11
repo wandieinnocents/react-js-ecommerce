@@ -10,8 +10,6 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Rating from '@mui/material/Rating';
 
-
-
 import { ImportantDevices } from '@mui/icons-material';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';

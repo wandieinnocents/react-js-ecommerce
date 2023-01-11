@@ -66,6 +66,8 @@ export default function Checkout() {
 
         {/* checkout product component */}
         <CheckoutProduct />
+        <CheckoutProduct />
+        <CheckoutProduct />
 
         {/* end checkout product component */}
 
