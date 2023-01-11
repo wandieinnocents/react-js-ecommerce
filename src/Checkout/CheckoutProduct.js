@@ -63,136 +63,106 @@ export default function CheckoutProduct() {
 
     // General Box Layout
     <Box sx={{ flexGrow: 1 }}>
-      {/* Grid */}
-      {/* parallax section */}
-      <Grid
-        container
-        direction="row"
-        spacing={2}
-      >
-        {/* banner section */}
-        <Grid item xs={12} sm={12} md={12} style={{ backgroundColor: '', marginBottom: 10 }} >
-         
-        </Grid>
-      </Grid>
+            {/* heading */}
+                <h2 style={{ color:'black',textAlign: "center",alignContent:"center" }}>YOUR SHOPPING BASKET </h2>
+            
+
+            {/* GENERAL LAYOUT GRID ROW */}
+            <Grid  container  direction="row"  spacing={2} >
+
+                {/* left space */}
+                <Grid item xs={12} sm={1} md={1}>
+                </Grid>
+
+                {/* COL 1  */}
+                <Grid item xs={12} sm={3} md={3}>
+        
+                        {/* product image */}
+                        <Item style={{ backgroundColor: '', padding: 6 }}>
+
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
+                            alt="product image" style={{ width:"200px" , height:"200px"}} />
+                        
+                        </Item>
+                        {/* End of product image */}
+
+                </Grid>
+
+                {/* COL 2 */}
+                <Grid item xs={12} sm={7} md={7} >
+
+                
+                
+                    {/* MAIN CONTENT GRID SECTIONS  */}
+                    <Grid
+                            container
+                            direction="row"
+                            spacing={2}
+
+                        >
+                        
+                                {/*  BLOG CONTENT GRID COL 1 */}
+                                <Grid item xs={12} sm={12} md={12} >
+                                <Item style={{ backgroundColor: '', padding: 6 }}>
+                                
+                                    <h2 style={{ color:'black' }}>SHOPPING BASKET </h2>
+                                    
+                                    
+
+                                    {/* button readmore */}
+                                    <hr></hr>
+
+                                
+
+                                    <Stack 
+                                    direction="row"
+                                    alignContent="center"  
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    spacing={2}  
+                                    >
+                                    
+                                    <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
+                                    Read more
+                                    </Button>
+                                    </Stack>
+                                
+                                    
+
+                                </Item>
+                                
 
 
 
-      {/* GENERAL LAYOUT GRID ROW */}
-      <Grid
-        container
-        direction="row"
-        spacing={2}
-      >
-      
-        {/* left space */}
-          {/* COL 2 SIDEBAR */}
-            <Grid item xs={12} sm={4} md={4}>
-       
-                    {/* product image */}
-                    <Item style={{ backgroundColor: '', padding: 6 }}>
+                                
+                                </Grid>
+                                {/*  END BLOG CONTENT GRID COL 1 */}
 
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
-                        alt="product image" style={{ width:"200px" , height:"200px"}} />
+                            
+                        </Grid>
+                        
+                    {/* END BLOG CONTENT GRID COL 2 */}
+
+
+
+
                     
-                    </Item>
-                    {/* End of product image */}
+                
+            
+
+                </Grid>
+
+                {/* right space */}
+                <Grid item xs={12} sm={1} md={1}>
+                </Grid>
+
+
+                {/* END OF PRODUCT INFORMATION */}
+            
+
 
             </Grid>
-
-        {/* PRODUCT INFORMATION */}
-        <Grid item xs={12} sm={8} md={8} >
-        
-            {/* MAIN CONTENT GRID SECTIONS  */}
-              <Grid
-                    container
-                    direction="row"
-                    spacing={2}
-
-                  >
-                  
-                        {/*  BLOG CONTENT GRID COL 1 */}
-                        <Grid item xs={12} sm={12} md={12} >
-                          <Item style={{ backgroundColor: '', padding: 6 }}>
-                           
-                            <h2 style={{ color:'black' }}>SHOPPING BASKET </h2>
-                            
-                            
-
-                            {/* button readmore */}
-                            <hr></hr>
-
-                          
-
-                            <Stack 
-                            direction="row"
-                            alignContent="center"  
-                            alignItems="center"
-                            justifyContent="center"
-                            spacing={2}  
-                            >
-                              
-                              <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
-                              Read more
-                              </Button>
-                            </Stack>
-                          
-                            
-
-                          </Item>
-                          
-
-
-
-                          
-                        </Grid>
-                        {/*  END BLOG CONTENT GRID COL 1 */}
-
-                       
-                  </Grid>
-                  
-            {/* END BLOG CONTENT GRID COL 2 */}
-
-
-
-
-            
-           
-      
-
-        </Grid>
-
-        {/* END OF PRODUCT INFORMATION */}
-
-        
-      
-
-      </Grid>
-      {/* END OF GENERAL LAYOUT GRID ROW */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            {/* END OF GENERAL LAYOUT GRID ROW */}
 
 
     </Box>
