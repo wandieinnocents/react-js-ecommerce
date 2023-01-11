@@ -94,18 +94,8 @@ export default function Checkout() {
                         <Grid item xs={12} sm={12} md={12} >
                           <Item style={{ backgroundColor: '', padding: 6 }}>
                            
-
-                          
-
-
-                            {/* Author */}
-                            <h4 style={{ marginTop:10}}>  
-                            <Chip label="Author" color="primary" size="small" variant="outlined" /> : Wandie   
-                            <Chip style={{ marginLeft:10 }} label="Post Date" size="small"  color="success" />:  12-10-2023 
-                            </h4>
-                            
-                          
-                            <h2 style={{ color:'black' }}>How to start a career in technology today in ug. </h2>
+                  
+                            <h2 style={{ color:'black' }}>YOUR SHOPPING BASKET </h2>
                             
                             <Typography style={{ marginTop:-10,textAlign:'justify' }}>
                               Truncation should be conditionally applicable on this long line of text
@@ -160,40 +150,17 @@ export default function Checkout() {
         {/* END OF MAIN CONTENT AREA */}
 
 
-        
+
+
+
+
 
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        {/* Column 2 */}
-        {/* SIDEBAR */}
+        {/* PROCEED TO CHECKOUT */}
         <Grid item xs={12} sm={4} md={4}>
-       
-
-            <h3 style={{ color:'black' }}>Rescent Articles  </h3>
+            <h3 style={{ color:'black' }}>PROCEED TO CHECKOUT  </h3>
             <hr></hr>
         
-
-
             {/* start of rescnet post article */}
             <Item style={{ backgroundColor: '', padding: 6 }}>
                 {/* icon */}
