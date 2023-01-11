@@ -26,6 +26,9 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 
+// components
+import CurrencyFormat from "react-currency-format";
+
 
 
 
@@ -77,6 +80,24 @@ export default function SubTotal() {
                                      </Typography>
 
                                      <h2>UGX 30000 </h2>
+                                     <CurrencyFormat 
+                                       renderText={(value) => (
+                                        <>
+                                        <p> SubTotal: (0 Items ) : <strong>UGX 0</strong> </p>
+                                        <small><input type="checkbox" /> 
+                                        This order contains gift 
+                                        </small>
+                                        </>
+
+
+                                       )}
+
+                                       decimalScale={2}
+                                       value={0}
+                                       displayType={"text"}
+                                       thousandSeparator={true}
+                                     
+                                     />
                                      
 
                                     {/* button readmore */}
