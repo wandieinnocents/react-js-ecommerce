@@ -38,61 +38,26 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// parallax image
-const image1 =
-  "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
-const image2 =
-  "https://img00.deviantart.net/2bd0/i/2009/276/c/9/magic_forrest_wallpaper_by_goergen.jpg";
-const image3 =
-  "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
-const image4 =
-  "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
-const parallaxText = {
-  // background: "white",
-  padding: 10,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  textAlign: "center",
-  width: "100%",
-  transform: "translate(-50%,-50%)"
-};
+
 // end of parallax
-export default function CheckoutProduct() {
+export default function SubTotal() {
   return (
 
     // General Box Layout
     <Box sx={{ flexGrow: 1 }}>
             {/* heading */}
-                <h2 style={{ color:'black',textAlign: "center",alignContent:"center" }}>YOUR SHOPPING BASKET </h2>
+                <h2 style={{ color:'black',textAlign: "center",alignContent:"center" }}>
+               SUB TOTAL
+                </h2>
             
 
             {/* GENERAL LAYOUT GRID ROW */}
             <Grid  container  direction="row"  spacing={2} >
 
-                {/* left space */}
-                <Grid item xs={12} sm={1} md={1}>
-                </Grid>
+             
+                {/* COL 12 */}
+                <Grid item xs={12} sm={12} md={12} >
 
-                {/* COL 1  */}
-                <Grid item xs={12} sm={3} md={3}>
-        
-                        {/* product image */}
-                        <Item style={{ backgroundColor: '', padding: 6 }}>
-
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
-                            alt="product image" style={{ width:"200px" , height:"200px"}} />
-                        
-                        </Item>
-                        {/* End of product image */}
-
-                </Grid>
-
-                {/* COL 2 */}
-                <Grid item xs={12} sm={7} md={7} >
-
-                
-                
                     {/* MAIN CONTENT GRID SECTIONS  */}
                     <Grid
                             container
@@ -113,8 +78,6 @@ export default function CheckoutProduct() {
 
                                      <h2>UGX 30000 </h2>
                                      
-                                    
-                                    
 
                                     {/* button readmore */}
                                     <hr></hr>
@@ -133,11 +96,7 @@ export default function CheckoutProduct() {
                                     </Stack>
                                 
                                 </Item>
-                                
-
-
-
-                                
+                               
                                 </Grid>
                                 {/*  END BLOG CONTENT GRID COL 1 */}
 
@@ -146,19 +105,9 @@ export default function CheckoutProduct() {
                         
                     {/* END BLOG CONTENT GRID COL 2 */}
 
-
-
-
-                    
-                
-            
-
                 </Grid>
 
-                {/* right space */}
-                <Grid item xs={12} sm={1} md={1}>
-                </Grid>
-
+              
 
                 {/* END OF PRODUCT INFORMATION */}
             
@@ -175,4 +124,3 @@ export default function CheckoutProduct() {
 
 
 
-// create the Home stylesheet here
