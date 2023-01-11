@@ -64,11 +64,8 @@ export default function Checkout() {
     // General Box Layout
     <Box sx={{ flexGrow: 1 }}>
       {/* Grid */}
-      {/* parallax section */}
      
-
-
-
+     
 
 
       {/* GENERAL LAYOUT GRID ROW */}
@@ -84,11 +81,9 @@ export default function Checkout() {
         
             {/* MAIN CONTENT GRID SECTIONS  */}
               <Grid
-                    container
-                    direction="row"
-                    spacing={2}
-
-                  >
+                container
+                direction="row"
+                spacing={2}>
                   
                         {/*  BLOG CONTENT GRID COL 1 */}
                         <Grid item xs={12} sm={12} md={12} >
