@@ -11,6 +11,7 @@ import { Hidden } from '@mui/material';
 
 
 
+
 import { ImportantDevices } from '@mui/icons-material';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
@@ -25,6 +26,9 @@ import Chip from '@mui/material/Chip';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
+
+// components
+import CheckoutProduct from "./CheckoutProduct";
 
 
 
@@ -76,63 +80,13 @@ export default function Checkout() {
       >
       
 
-        {/* MAIN CONTENT AREA */}
+        {/* PRODUCT BASKET SECTION */}
         <Grid item xs={12} sm={8} md={8} >
-        
-            {/* MAIN CONTENT GRID SECTIONS  */}
-              <Grid
-                container
-                direction="row"
-                spacing={2}>
-                  
-                        {/*  BLOG CONTENT GRID COL 1 */}
-                        <Grid item xs={12} sm={12} md={12} >
-                          <Item style={{ backgroundColor: '', padding: 6 }}>
-                           
-                  
-                            <h2 style={{ color:'black' }}>YOUR SHOPPING BASKET </h2>
-                            
-                            <Typography style={{ marginTop:-10,textAlign:'justify' }}>
-                              Truncation should be conditionally applicable on this long line of text
-                              as this is a much longer line than what the container can .Truncation should be conditionally applicable on this long line of text
-                              as this is a much longer line than what the container can handl.
-                            
-                            </Typography>
 
-                            {/* button readmore */}
-                            <hr></hr>
+        {/* checkout product component */}
+        <CheckoutProduct />
 
-                          
-
-                            <Stack 
-                            direction="row"
-                            alignContent="center"  
-                            alignItems="center"
-                            justifyContent="center"
-                            spacing={2}  
-                            >
-                              
-                              <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
-                              Read more
-                              </Button>
-                            </Stack>
-                          
-                            
-
-                          </Item>
-                          
-
-
-
-                          
-                        </Grid>
-                        {/*  END BLOG CONTENT GRID COL 1 */}
-
-                       
-                  </Grid>
-                  
-            {/* END BLOG CONTENT GRID COL 2 */}
-
+        {/* end checkout product component */}
 
 
 
@@ -142,7 +96,7 @@ export default function Checkout() {
 
         </Grid>
 
-        {/* END OF MAIN CONTENT AREA */}
+        {/* END OF PRODUCT BASKET SECTION */}
 
 
 

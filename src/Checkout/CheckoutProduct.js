@@ -140,17 +140,6 @@ export default function CheckoutProduct() {
                         <Grid item xs={12} sm={12} md={12} >
                           <Item style={{ backgroundColor: '', padding: 6 }}>
                            
-
-                          
-
-
-                            {/* Author */}
-                            <h4 style={{ marginTop:10}}>  
-                            <Chip label="Author" color="primary" size="small" variant="outlined" /> : Wandie   
-                            <Chip style={{ marginLeft:10 }} label="Post Date" size="small"  color="success" />:  12-10-2023 
-                            </h4>
-                            
-                          
                             <h2 style={{ color:'black' }}>How to start a career in technology today in ug. </h2>
                             
                             <Typography style={{ marginTop:-10,textAlign:'justify' }}>
@@ -234,26 +223,13 @@ export default function CheckoutProduct() {
         {/* SIDEBAR */}
         <Grid item xs={12} sm={3} md={3}>
        
-
-        <h3 style={{ color:'black' }}>Rescent Articles  </h3>
-          <hr></hr>
-        
-
-
         {/* start of rescnet post article */}
         <Item style={{ backgroundColor: '', padding: 6 }}>
             {/* icon */}
           
 
 
-            <h3 style={{ color:'black' }}>How to start a career in technology  </h3>
-
-
-              {/* Author */}
-              <h4 style={{ marginTop:10}}>  
-              <Chip label="Author" color="primary" size="small" variant="outlined" /> : Wandie   
-              <Chip style={{ marginLeft:10 }} label="Post Date" size="small"  color="success" />:  12-10-2023 
-              </h4>
+            <h3 style={{ color:'black' }}>PROCEED TO CHECKOUT </h3>
 
             <Typography style={{ marginTop:-10,textAlign:'justify' }}>
             Truncation should be conditionally applicable
