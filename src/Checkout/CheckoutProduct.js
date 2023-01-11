@@ -77,41 +77,6 @@ export default function CheckoutProduct() {
       </Grid>
 
 
-   
-
-      {/* Grid Row */}
-      <Grid
-        container
-        direction="row"
-        spacing={2}
-      // style={{top:530,zIndex:1, position:'absolute'}}
-
-      >
-
-        {/* Column1 */}
-        <Grid item xs={12} sm={12} md={12} style={{ backgroundColor: '', textAlign: 'center', padding: 6, marginBottom: 20 }}>
-
-          {/* icon */}
-
-          <h1>OUR NEWS ARTICLES</h1>
-          <Typography >
-           We have a support team , that is reliable to handle your queries.
-           
-          </Typography>
-
-        </Grid>
-        {/* Column2 */}
-
-
-
-      </Grid>
-      {/* End of Grid Row */}
-
-
-
-
-
-
 
       {/* GENERAL LAYOUT GRID ROW */}
       <Grid
@@ -121,12 +86,22 @@ export default function CheckoutProduct() {
       >
       
         {/* left space */}
-        <Grid item xs={12} sm={1} md={1} >
-        </Grid>
+          {/* COL 2 SIDEBAR */}
+            <Grid item xs={12} sm={4} md={4}>
+       
+                    {/* product image */}
+                    <Item style={{ backgroundColor: '', padding: 6 }}>
 
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
+                        alt="product image" style={{ width:"200px" , height:"200px"}} />
+                    
+                    </Item>
+                    {/* End of product image */}
 
-        {/* MAIN CONTENT AREA */}
-        <Grid item xs={12} sm={7} md={7} >
+            </Grid>
+
+        {/* PRODUCT INFORMATION */}
+        <Grid item xs={12} sm={8} md={8} >
         
             {/* MAIN CONTENT GRID SECTIONS  */}
               <Grid
@@ -140,14 +115,9 @@ export default function CheckoutProduct() {
                         <Grid item xs={12} sm={12} md={12} >
                           <Item style={{ backgroundColor: '', padding: 6 }}>
                            
-                            <h2 style={{ color:'black' }}>How to start a career in technology today in ug. </h2>
+                            <h2 style={{ color:'black' }}>SHOPPING BASKET </h2>
                             
-                            <Typography style={{ marginTop:-10,textAlign:'justify' }}>
-                              Truncation should be conditionally applicable on this long line of text
-                              as this is a much longer line than what the container can .Truncation should be conditionally applicable on this long line of text
-                              as this is a much longer line than what the container can handl.
                             
-                            </Typography>
 
                             {/* button readmore */}
                             <hr></hr>
@@ -192,73 +162,11 @@ export default function CheckoutProduct() {
 
         </Grid>
 
-        {/* END OF MAIN CONTENT AREA */}
-
+        {/* END OF PRODUCT INFORMATION */}
 
         
-
       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        {/* Column 2 */}
-        {/* SIDEBAR */}
-        <Grid item xs={12} sm={3} md={3}>
-       
-        {/* start of rescnet post article */}
-        <Item style={{ backgroundColor: '', padding: 6 }}>
-            {/* icon */}
-          
-
-
-            <h3 style={{ color:'black' }}>PROCEED TO CHECKOUT </h3>
-
-            <Typography style={{ marginTop:-10,textAlign:'justify' }}>
-            Truncation should be conditionally applicable
-              
-             
-            </Typography>
-        
-
-          </Item>
-          {/* End of rescnet post article */}
-
-
-
-
-
-
-
-       
-
-          
-
-
-        </Grid>
-
-
-       
-        {/* right space */}
-        <Grid item xs={12} sm={1} md={1} >
-        </Grid>
       </Grid>
       {/* END OF GENERAL LAYOUT GRID ROW */}
 
