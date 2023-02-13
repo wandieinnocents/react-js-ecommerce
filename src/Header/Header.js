@@ -31,18 +31,22 @@ function Header() {
 
      {/* nav header */}
      <div className="header_nav">
-
+     <Link to="/login" style={{ textDecoration:"none"}}>
       <div className="nav_item">
         <span className="nav_item_one">Hello Guest</span>
         <span className="nav_item_two">Signin</span>
 
       </div>
+      </Link>
 
+
+      
       <div className="nav_item">
         <span className="nav_item_one">Your</span>
         <span className="nav_item_two">Shop</span>
         
       </div>
+   
 
 
       {/* basket */}
