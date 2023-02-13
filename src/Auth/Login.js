@@ -130,7 +130,7 @@ export default function Login() {
                             // onClick = { () => console.log("bUTTON CLICKED")}
                             style={{ marginTop:10 , width:'100%' }} 
                             variant="contained"  
-                            color="secondary" 
+                            color="primary" 
                             endIcon={<SendIcon />}>
                             SIGNIN
                             </Button>
