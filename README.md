@@ -7,6 +7,7 @@ A webapp created in reactjs for ecommerce UI.
 - HomeUi
 - BasketPage
 - LoginPage
+- ProductComponent
 - HeaderComponent
 - ReactRouter
 
