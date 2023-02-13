@@ -42,6 +42,21 @@ function Home() {
                 rating={4}
                 image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
             />
+
+<Product
+                id="49538094"
+                title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
+                price={2390000.0}
+                rating={4}
+                image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
+            />
+             <Product
+                id="49538094"
+                title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
+                price={2390000.0}
+                rating={4}
+                image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
+            />
             
             </div>
 
@@ -74,6 +89,20 @@ function Home() {
               {/* home row 3 */}
               <div className="home__row">
               <Product
+                        id="90829332"
+                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+                        price={1090000.98}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+                    />
+                      <Product
+                        id="90829332"
+                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+                        price={1090000.98}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+                    />
+                      <Product
                         id="90829332"
                         title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
                         price={1090000.98}
