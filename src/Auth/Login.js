@@ -50,10 +50,7 @@ export default function Login() {
 
     // General Box Layout
     <Box sx={{ flexGrow: 1 }}>
-            {/* heading */}
-                <h2 style={{ color:'black',textAlign: "center",alignContent:"center" }}>
-              LOGIN
-                </h2>
+            
             
 
             {/* GENERAL LAYOUT GRID ROW */}
@@ -78,8 +75,8 @@ export default function Login() {
                     <Grid item xs={12} sm={12} md={12} style={{ backgroundColor: '', padding: 20 }} >
 
                     {/* icon */}
-                    <h2 style={{ backgroundColor: '', fontSize: 50, color: 'black', textAlign: 'left', fontFamily: "Playfair Display" }}>
-                        LEAVE A MESSAGE ! </h2>
+                    <h2 style={{ backgroundColor: '', fontSize: 30, color: 'black', textAlign: 'center', fontFamily: "Playfair Display" }}>
+                        SIGN IN  </h2>
 
 
 
@@ -115,47 +112,9 @@ export default function Login() {
                         style={{  marginTop:20,marginBottom:20,display:'block'  }}
                         />
 
-                        {/* phone */}
-                        <TextField 
-                        //  onChange={ (e) => setPhone(e.target.value) }
-                        id="outlined-basic" 
-                        label="Phone" 
-                        variant="outlined"
-                        color="secondary"
-                        fullWidth
-                        required
-                        // error={phoneError}
-                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
-                        />
+                       
 
-                        {/* subject */}
-                        <TextField 
-                        //  onChange={ (e) => setSubject(e.target.value) }
-                        id="outlined-basic" 
-                        label="Subject" 
-                        variant="outlined"
-                        color="secondary"
-                        fullWidth
-                        required
-                        // error={subjectError}
-                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
-                        />
 
-                        {/* message */}
-
-                        <TextField 
-                        // onChange={ (e) => setFeeback(e.target.value) }
-                        id="outlined-multiline-static" 
-                        label="Message" 
-                        variant="outlined"
-                        color="secondary"
-                        multiline
-                        rows={6}
-                        fullWidth
-                        required
-                        // error={feedbackError}
-                        style={{  marginTop:20, marginBottom:20,display:'block' }}
-                        />
 
                         {/* button */}
                         <Stack 
@@ -173,7 +132,28 @@ export default function Login() {
                             variant="contained"  
                             color="secondary" 
                             endIcon={<SendIcon />}>
-                            Submit
+                            SIGNIN
+                            </Button>
+                        </Stack>
+
+                        <p>By signing in you agree with all the tersm of work.</p>
+                         {/* button */}
+                         <Stack 
+                        direction="row"
+                        alignContent="center"  
+                        alignItems="center"
+                        justifyContent="center"
+                        spacing={2}  
+                        >
+                            
+                            <Button 
+                            // onClick={handleSubmit}
+                            // onClick = { () => console.log("bUTTON CLICKED")}
+                            style={{ marginTop:10 , width:'100%' }} 
+                            variant="contained"  
+                            color="secondary" 
+                            endIcon={<SendIcon />}>
+                            CREATE ACCOUNT
                             </Button>
                         </Stack>
 
