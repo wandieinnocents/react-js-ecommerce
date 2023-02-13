@@ -21,7 +21,7 @@ function App() {
       {/* Checkout route */}
       <Route path="/checkout" element={ [<Header/>,<Checkout/>]}  />
       {/* login */}
-      <Route path="/login" element={ [<Header/>,<Checkout/>]}  />
+      <Route path="/login" element={ [<Header/>,<Login/>]}  />
 
       </Routes>
     </Router>

@@ -8,6 +8,8 @@ import { render } from "react-dom";
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Hidden } from '@mui/material';
+import TextField from '@mui/material/TextField';
+
 
 
 
@@ -50,84 +52,156 @@ export default function Login() {
     <Box sx={{ flexGrow: 1 }}>
             {/* heading */}
                 <h2 style={{ color:'black',textAlign: "center",alignContent:"center" }}>
-               SUB TOTAL
+              LOGIN
                 </h2>
             
 
             {/* GENERAL LAYOUT GRID ROW */}
             <Grid  container  direction="row"  spacing={2} >
+           
+            {/* col1 */}
+            <Grid item xs={12} sm={4} md={4} >
+            </Grid>
+            {/* end of col1 */}
 
-             
-                {/* COL 12 */}
-                <Grid item xs={12} sm={12} md={12} >
 
-                    {/* MAIN CONTENT GRID SECTIONS  */}
-                    <Grid
-                            container
-                            direction="row"
-                            spacing={2}
+            {/* COL 2 */}
+            <Grid item xs={12} sm={4} md={4} >
 
+                <Grid
+                    container
+                    direction="row"
+                    spacing={2}
+                >
+                
+                    {/* Column1 */}
+                    <Grid item xs={12} sm={12} md={12} style={{ backgroundColor: '', padding: 20 }} >
+
+                    {/* icon */}
+                    <h2 style={{ backgroundColor: '', fontSize: 50, color: 'black', textAlign: 'left', fontFamily: "Playfair Display" }}>
+                        LEAVE A MESSAGE ! </h2>
+
+
+
+                        {/* first form */}
+
+                        <form noValidate autoComplete="off"  >
+
+                        {/* fullname */}
+                        <TextField 
+                        // onChange={ (e) => setFullName(e.target.value) }
+                        id="outlined-basic" 
+                        label="Full Name" 
+                        variant="outlined"
+                        color="secondary"
+                        fullWidth
+                        required
+                        // error={fullnameError}
+                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
+                        />
+
+                    
+
+                        {/* email */}
+                        <TextField 
+                        // onChange={ (e) => setEmail(e.target.value) }
+                        id="outlined-basic" 
+                        label="Email" 
+                        variant="outlined"
+                        color="secondary"
+                        fullWidth
+                        required
+                        // error={emailError}
+                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
+                        />
+
+                        {/* phone */}
+                        <TextField 
+                        //  onChange={ (e) => setPhone(e.target.value) }
+                        id="outlined-basic" 
+                        label="Phone" 
+                        variant="outlined"
+                        color="secondary"
+                        fullWidth
+                        required
+                        // error={phoneError}
+                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
+                        />
+
+                        {/* subject */}
+                        <TextField 
+                        //  onChange={ (e) => setSubject(e.target.value) }
+                        id="outlined-basic" 
+                        label="Subject" 
+                        variant="outlined"
+                        color="secondary"
+                        fullWidth
+                        required
+                        // error={subjectError}
+                        style={{  marginTop:20,marginBottom:20,display:'block'  }}
+                        />
+
+                        {/* message */}
+
+                        <TextField 
+                        // onChange={ (e) => setFeeback(e.target.value) }
+                        id="outlined-multiline-static" 
+                        label="Message" 
+                        variant="outlined"
+                        color="secondary"
+                        multiline
+                        rows={6}
+                        fullWidth
+                        required
+                        // error={feedbackError}
+                        style={{  marginTop:20, marginBottom:20,display:'block' }}
+                        />
+
+                        {/* button */}
+                        <Stack 
+                        direction="row"
+                        alignContent="center"  
+                        alignItems="center"
+                        justifyContent="center"
+                        spacing={2}  
                         >
-                        
-                                {/*  BLOG CONTENT GRID COL 1 */}
-                                <Grid item xs={12} sm={12} md={12} >
-                                <Item style={{ backgroundColor: '', padding: 6 }}>
-                                
-                                   
-
-                                   
-                                     <CurrencyFormat 
-                                       renderText={(value) => (
-                                        <>
-                                        <p> SubTotal: (0 Items ) : <strong>UGX 0</strong> </p>
-                                        <small><input type="checkbox" /> 
-                                        This order contains gift 
-                                        </small>
-                                        </>
-
-
-                                       )}
-
-                                       decimalScale={2}
-                                       value={0}
-                                       displayType={"text"}
-                                       thousandSeparator={true}
-                                     
-                                     />
-                                     
-
-                                    {/* button readmore */}
-                                    <hr></hr>
-
-                                    <Stack 
-                                    direction="row"
-                                    alignContent="center"  
-                                    alignItems="center"
-                                    justifyContent="center"
-                                    spacing={2}  
-                                    >
-                                    
-                                    <Button style={{ marginTop:10 , width:'100%' }} variant="contained"  color="secondary" endIcon={<SendIcon />}>
-                                    PROCEED TO CHECKOUT 
-                                    </Button>
-                                    </Stack>
-                                
-                                </Item>
-                               
-                                </Grid>
-                                {/*  END BLOG CONTENT GRID COL 1 */}
-
                             
-                        </Grid>
-                        
-                    {/* END BLOG CONTENT GRID COL 2 */}
+                            <Button 
+                            // onClick={handleSubmit}
+                            // onClick = { () => console.log("bUTTON CLICKED")}
+                            style={{ marginTop:10 , width:'100%' }} 
+                            variant="contained"  
+                            color="secondary" 
+                            endIcon={<SendIcon />}>
+                            Submit
+                            </Button>
+                        </Stack>
 
+
+
+                    
+
+                        
+
+                    
+                        
+                        </form>
+
+                        
+
+                    </Grid>
+
+                
                 </Grid>
+
+            </Grid>
+            {/* END OF  COL 2 */}
+
+                <Grid item xs={12} sm={4} md={4} >
+            </Grid>
 
               
 
-                {/* END OF PRODUCT INFORMATION */}
-            
 
 
             </Grid>
